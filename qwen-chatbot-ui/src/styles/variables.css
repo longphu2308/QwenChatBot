@@ -1,0 +1,51 @@
+:root {
+  /* Light theme (default) */
+  --primary-color: #4a76f5;
+  --primary-color-hover: #3a66e0;
+  --background-color: #ffffff;
+  --secondary-background: #f9f9f9;
+  --border-color: #e0e0e0;
+  --text-color: #333333;
+  --secondary-text-color: #666666;
+  --message-user-bg: #e3f2fd;
+  --message-user-color: #0d47a1;
+  --message-ai-bg: #f5f5f5;
+  --message-ai-color: #333333;
+  --input-bg: #ffffff;
+  --code-bg: #f6f8fa;
+  --code-header-bg: #eff1f3;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  
+  /* Common values */
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 30px;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --transition-speed: 0.2s;
+}
+
+[data-theme="dark"] {
+  --primary-color: #5d8aff;
+  --primary-color-hover: #4a76f5;
+  --background-color: #1e1e1e;
+  --secondary-background: #2d2d2d;
+  --border-color: #444444;
+  --text-color: #e0e0e0;
+  --secondary-text-color: #aaaaaa;
+  --message-user-bg: #2c5282;
+  --message-user-color: #e0e0e0;
+  --message-ai-bg: #383838;
+  --message-ai-color: #e0e0e0;
+  --input-bg: #2d2d2d;
+  --code-bg: #2d2d30;
+  --code-header-bg: #252526;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}

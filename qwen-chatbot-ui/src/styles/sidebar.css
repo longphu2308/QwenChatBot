@@ -1,0 +1,315 @@
+/* Sidebar styles */
+.sidebar {
+  background-color: var(--secondary-background);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 0;
+  opacity: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+}
+
+.new-chat-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-weight: 600;
+  transition: background-color var(--transition-speed);
+}
+
+.new-chat-button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.chats-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+}
+
+.empty-chats {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--secondary-text-color);
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-xs);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.chat-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.chat-item.active {
+  background-color: rgba(74, 118, 245, 0.1);
+}
+
+.chat-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+
+.chat-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.chat-item:hover .chat-actions {
+  opacity: 1;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
+
+.icon-button:hover {
+  color: var(--primary-color);
+}
+
+.rename-form {
+  display: flex;
+  flex: 1;
+}
+
+.rename-form input {
+  flex: 1;
+  padding: var(--spacing-xs);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-md);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.agent-list {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.agent-list h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-md);
+  color: var(--text-color);
+}
+
+.agent-item {
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-xs);
+  transition: background-color var(--transition-speed);
+}
+
+.agent-info strong {
+  color: var(--text-color);
+}
+
+.agent-info p {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text-color);
+  margin-top: var(--spacing-xs);
+}
+
+.user-section {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info span {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: var(--secondary-text-color);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-speed);
+}
+
+.logout-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #e53935;
+}
+
+.templates-container {
+  padding: var(--spacing-md);
+}
+
+.templates-container h3 {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.template-card {
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  background-color: var(--background-color);
+}
+
+.template-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-color: var(--primary-color);
+}
+
+.template-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.template-card h4 {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-color);
+}
+
+.template-card p {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text-color);
+}
+
+.templates-footer {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.templates-footer button {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  font-weight: 500;
+  transition: background-color var(--transition-speed);
+}
+
+.custom-chat-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.custom-chat-button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.cancel-button {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  border: 1px solid var(--border-color) !important;
+}
+
+.cancel-button:hover {
+  background-color: var(--border-color);
+}
+
+.new-chat-form {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.new-chat-form input, 
+.new-chat-form select {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.agent-selector label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--secondary-text-color);
+}
+
+.form-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  font-weight: 500;
+  transition: background-color var(--transition-speed);
+}
+
+.form-buttons button:first-child {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.form-buttons button:last-child {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.form-buttons button:first-child:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.form-buttons button:last-child:hover {
+  background-color: var(--border-color);
+}

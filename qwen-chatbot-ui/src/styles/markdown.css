@@ -1,0 +1,64 @@
+/* Markdown content styles */
+.markdown-content {
+  line-height: 1.6;
+}
+
+.md-heading {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+.md-heading:first-child {
+  margin-top: 0.5em;
+}
+
+.md-list {
+  margin: 0.8em 0;
+  padding-left: 2em;
+}
+
+.md-list-item {
+  margin: 0.3em 0;
+}
+
+.md-paragraph {
+  margin: 0.8em 0;
+}
+
+.inline-code {
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.9em;
+}
+
+.code-block-container {
+  margin: 1em 0;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  background-color: var(--code-bg);
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.code-header {
+  background-color: var(--code-header-bg);
+  padding: 0.5em 1em;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.85em;
+  color: var(--secondary-text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-block {
+  margin: 0 !important;
+  padding: 1em !important;
+  background-color: var(--code-bg);
+  overflow-x: auto;
+  font-size: 0.9em;
+  color: var(--text-color);
+}

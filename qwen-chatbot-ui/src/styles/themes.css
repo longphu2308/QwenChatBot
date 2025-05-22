@@ -1,0 +1,53 @@
+/* Theme-specific overrides */
+[data-theme="dark"] .chat-interface,
+[data-theme="dark"] .sidebar {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .chat-input {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .auth-container {
+  background-color: var(--background-color);
+}
+
+[data-theme="dark"] .auth-form h2 {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group label {
+  color: var(--secondary-text-color);
+}
+
+[data-theme="dark"] .link-button {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .carousel-container {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .chat-header {
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+[data-theme="dark"] .toggle-sidebar button {
+  box-shadow: 2px 0 5px var(--shadow-color);
+}
+
+[data-theme="dark"] .message-bubble {
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+[data-theme="dark"] .welcome-message {
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+[data-theme="dark"] .code-block-container {
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+[data-theme="dark"] .settings-panel {
+  box-shadow: 0 4px 20px var(--shadow-color);
+}

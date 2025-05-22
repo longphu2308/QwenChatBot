@@ -1,0 +1,9 @@
+/* Import all modular CSS files */
+@import './variables.css';
+@import './layout.css';
+@import './auth.css';
+@import './chat.css';
+@import './sidebar.css';
+@import './settings.css';
+@import './markdown.css';
+@import './themes.css';
